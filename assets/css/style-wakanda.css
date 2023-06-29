@@ -1,0 +1,299 @@
+/*****************************************************************
+** - 01 - Default
+** - 02 - Navbar Area
+** - 03 - Wakanda Area
+** - 04 - Wakanda Step
+** - 05 - Footer Area
+*****************************************************************/
+
+/**************************************
+ ** - 01 - Default
+ **************************************/
+ @font-face {
+    font-family: 'panthera';
+    src: url(../fonts/PantheraRegular-MVZ9J.ttf);
+  }
+
+  @font-face {
+    font-family: "BEYNO";
+    src: url(../fonts/BEYNO.otf);
+}
+  @font-face {
+    font-family: 'beyno';
+    src: url(../fonts/BEYNO.otf);
+  }
+
+  @font-face {
+    font-family: 'wakandaforever';
+    src: url(../fonts/WakandaForever-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: 'cantarell';
+    src: url(../fonts/Cantarell-Regular.ttf);
+  }
+
+  :root {
+    --ct-white: #ffffff;
+    --ct-light-yellow: #f2cef2;
+    --ct-yellow: #df99f2;
+    --ct-dark-yellow: #9E91b7;
+    --ct-light-blue: #3d2da6;
+    --ct-blue: #07338c;
+    --ct-dark-blue: #021740;
+  }
+
+  *,
+  *::after,
+  *::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+
+   body {
+    background-image: url(../Allpages/arrière_plan.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: var(--ct-white);
+   }
+
+   .container {
+    width: 85%;
+    margin: auto;
+    padding: 20px 10px 20px 10px;
+   }
+
+   h1 {
+    font-size: 68px;
+    font-family: 'panthera';
+    color: var(--ct-dark-yellow);
+   }
+
+   h2 {
+    font-size: 32px;
+    font-family: 'beyno';
+    color: var(--ct-dark-yellow);
+   }
+
+   h3 {
+    font-size: 22px;
+    font-family: 'cantarell';
+    color: var(--ct-dark-blue);
+   }
+
+   p {
+    font-size: 16px;
+    font-family: 'cantarell';
+   }
+
+   ul  {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+  }
+
+  .row {
+    display: flex;
+  }
+
+   /**************************************
+ ** - 02 - Navbar Area
+ **************************************/
+  .navbar {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: space-between;  
+    z-index: 100;
+   }
+
+   .navbar-nav {
+    order: 2;
+    display: flex;
+   }
+
+   .navbar-nav li {
+    list-style: none;
+    margin-left: 40px;
+    font-family: 'beyno';
+   }
+
+   .navbar-nav li a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--ct-white);
+   }
+
+   .navbar-nav li a.active {
+    text-decoration: underline;
+    color: var(--ct-dark-yellow);
+   }
+   
+   /**************************************
+ ** - 03 - Wakanda Area
+ **************************************/
+ .wakanda-area {    
+    background-image: url(../Wakanda/Pantherwakanda1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    width: auto;
+    height: 800px;
+    padding-top: 0; 
+    margin-top: -40px; 
+  }
+
+  .wakanda-title {   
+    width: 60%;
+    justify-content: center;    
+ }
+
+  .wakanda-title h1 {
+    margin-top: 300px;
+    margin-bottom: 10px;
+  }
+
+  .wakanda-title h2 {
+    margin-bottom: 10px;
+    font-family: 'wakandaforever';
+  }
+
+ .wakanda-content {   
+    width: 40%;
+    justify-content: center;    
+ }
+
+  .wakanda-content p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+  }
+
+ /**************************************
+** - 04 - Wakanda Step
+ **************************************/
+ .wakanda-step {
+    height: auto;
+    width: 100%;
+    margin-bottom: -80px;
+ }
+
+ .wakanda-step-content {
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+    padding: 0 50px 10px 50px;
+ }
+
+ .wakanda-step-content .features-text >h2 {
+    margin-top: 30px;
+    margin-bottom: 30px;
+ }
+  
+ .wakanda-step-content .features-text >p {
+    margin-top: 20px;
+    margin-bottom: 20px;
+ }
+
+ .wakanda-step-content .video-media {
+    height: 200px;
+    padding: 30px;
+    width: auto;    
+    border: 1px solid var(--ct-light-blue);
+    background-color: var(--ct-light-blue);
+    justify-content: center;
+ }
+
+ .wakanda-step-content .video-media p {
+    margin-top: 10px;
+    margin-bottom: 20px;    
+ } 
+
+ .wakanda-step-content .video-media p >a {
+    text-align: center;
+    justify-content: center;
+    font-family: 'cantarellregular';
+    text-decoration: none;
+    color: var(--ct-white);
+ }
+
+ .photography >img {
+    width: 75vh;
+ }
+
+ /**************************************
+** - 05 - Footer Area
+ **************************************/
+footer {
+background: url(../Allpages/back_footer.png);
+background-repeat: no-repeat;
+background-size: cover;
+color: var(--ct-white);
+margin-top: 150px;
+height: 450px;
+font-family: 14px;
+}
+
+footer .footer-logo > img {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .footer-logo .cercle-footer {
+  width: 35vh;
+  height: auto;
+  margin-top: 100px;
+  margin-left: 150px;
+}
+
+footer .footer-logo .logo-footer  {
+  margin-top: -160px;
+  margin-left: 200px;
+}
+
+footer .footer-links .footer-quick-links li > a{
+  text-decoration: none;
+  color: var(--ct-white);
+  text-transform: capitalize;
+  display: block;
+  margin: 10px;
+}
+
+footer .footer-content {  
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  padding: 50px;
+  align-items: flex-start;
+  margin-left: 450px; 
+  margin-top: -200px;  
+}
+
+footer .footer-links .footer-heading >p, footer .footer-social-media .social-heading > p {
+  color: var(--ct-white);
+  margin-bottom: 20px;
+}
+
+footer .copyright-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: end;
+  margin-top: 50px;
+  margin-right: 80px;
+  gap: 5px;
+}
+
+footer .copyright-content ul >li {
+  display: inline;  
+}
+
+footer .copyright-content ul li >a {
+  text-decoration: none;
+  color: var(--ct-white);
+  margin-left: 5px;
+} 
